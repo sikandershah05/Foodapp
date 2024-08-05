@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Asap } from '@next/font/google';
 import "./globals.css";
 import Navbar from './components/NavBar';
 import SideNav from './components/SideNav';
 import DishCard from './components/DishCard';
 
 
-const inter = Inter({ subsets: ["latin"] });
+const asap = Asap({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,14 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>    
-        <div className="flex">   
-        <SideNav/>
-        <div className="flex flex-col ml-32">
-        <Navbar/>
-        <DishCard/>
-        </div>
-        </div>
+      <body className={asap.className}>    
+        
         {children}
         </body>
     </html>
