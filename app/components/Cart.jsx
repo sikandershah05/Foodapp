@@ -22,7 +22,7 @@ const Cart = () => {
         <span className="text-lg text-white font-semibold">New Order</span>
         <span className="text-sm text-white">Date</span>
       </div>
-      <div className="border-b mb-4 pb-4">
+      <div className="border-b pb-4">
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center space-x-2">
             <img src="/cartpic.png" alt="" className="w-4 h-4" />
@@ -63,7 +63,7 @@ const Cart = () => {
           <div className="flex items-center space-x-2">
             <img src="/cartpic.png" alt="" className="w-4 h-4" />
             <div>
-              <p className="text-gray-700">Fries</p>
+              <p className="text-gray-700">Fires</p>
               <p className="text-gray-500 text-sm">$ 100</p>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 border-t pt-4">
+      <div className=" bg-white border-t pt-4">
         <div className="flex justify-between items-center mb-2">
           <p className="text-gray-700">Subtotal</p>
           <p className="text-gray-700">$ 600</p>
@@ -85,12 +85,14 @@ const Cart = () => {
           <p className="text-gray-700">Total</p>
           <p className="text-red-500 font-bold">$ 500</p>
         </div>
-        <div className="flex space-x-2 mt-4">
-          <button className="flex-1 py-2 bg-gray-500 text-white rounded">
-            Save
+        <div className="flex space-x-2 m-4 mb-4">
+          <button className="flex text-red-600 border border-red-600 rounded p-4 space-x-4 w-32 items-center">
+            <div><img src="/save.png" alt="" /></div>
+            <div>Save</div>
           </button>
-          <button className="flex-1 py-2 bg-green-500 text-white rounded">
-            Pay Now
+          <button className="flex bg-green-500 text-white rounded p-4 w-64 items-center space-x-8">
+          <div><img src="/paynow.png" alt="" /></div>
+          <div>Pay now</div>
           </button>
         </div>
       </div>
