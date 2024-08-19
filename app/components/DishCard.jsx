@@ -12,15 +12,15 @@ const DishCard = () => {
   ];
   return (
     <>
-      <div className="ml-8">
-        <div className="grid grid-cols-3 gap-8">
+      <div className="lg:ml-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {Dishes.map((Dish) => (
             <div
               key={Dish.name}
-              className="border rounded-lg w-56 h-60 bg-[#979797]"
+              className="border rounded-lg w-28 h-36 lg:w-56 lg:h-60 bg-[#979797]"
             >
               <div>
-                <div className="bg-[linear-gradient(to_bottom_right,#F98443,#F84775)] p-2 m-4 text-white w-24 text-center rounded">
+                <div className="bg-[linear-gradient(to_bottom_right,#F98443,#F84775)] p-2 m-4 text-white w-auto lg:w-24 text-center rounded">
                   <h2>$ {Dish.price}</h2>
                 </div>
                 <div className="bg-white p-2 m-4 w-42 rounded font-bold text-sm">

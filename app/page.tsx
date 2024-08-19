@@ -7,7 +7,6 @@ import MenuLabel from "./components/MenuLabel";
 
 export default function Home() {
   return (
-    <>
       <div className="flex w-full">
         <SideNav />
         <NavBar />
@@ -17,15 +16,6 @@ export default function Home() {
         </div>
         <Cart />
       </div>
-
-      {/* <div className="flex">
-        <div className="flex flex-col ml-32">
-        </div>
-        <div className="flex">
-          <DishCard />
-          <Cart />
-        </div>
-      </div> */}
-    </>
+    
   );
 }
